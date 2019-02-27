@@ -8,7 +8,6 @@ ENV MONGODB_VERSION 1.5.3
 ENV REDIS_VERSION 4.1.1
 
 ADD composer.phar /usr/local/bin/composer
-
 ADD nginx-$NGINX_VERSION.tar.gz /home/nginx-php/
 ADD php-$PHP_VERSION.tar.gz /home/nginx-php/
 ADD swoole-src-$SWOOLE_VERSION.tar.gz /home/extension/
