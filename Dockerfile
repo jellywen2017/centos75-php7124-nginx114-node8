@@ -166,7 +166,7 @@ RUN set -x && \
     make \
     cmake && \
     yum clean all && \
-    rm -rf /var/cache/{yum,ldconfig} /etc/my.cnf{,.d} && \
+    rm -rf /tmp/* /var/cache/{yum,ldconfig} /etc/my.cnf{,.d} && \
     mkdir -p --mode=0755 /var/cache/{yum,ldconfig} && \
     find /var/log -type f -delete && \
     rm -rf /home/nginx-php && \
